@@ -1,0 +1,174 @@
+.container{
+   
+    max-width: 1440px;
+    width: 100%;
+    padding: 0px 9% 48px;
+    margin: auto;
+    display: grid;
+    column-gap: 20px;
+    grid-template-rows: 120px 300px 160px 64px 206px ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header" 
+                         "cover cover article"
+                         "main_title readmore article"
+                         ". . . "
+                         "card1 card2 card3";   
+    
+
+}
+/* header */
+header{
+   padding: 31px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   grid-area: header;
+}
+.header_ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.active{
+    color: #000;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px;
+}
+.inactive{
+color: #484F5E;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px;
+}
+/* cover */
+.cover{
+    grid-area: cover;
+    background-image: url(../images/banner.png);
+}
+/* article */
+article{
+ background-color: #00001A;
+ padding: 32px;
+ grid-area: article;
+
+}
+
+.artice_main_title{
+color: #FFA24C;
+font-family: Inter;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 44px;
+margin-bottom: 24px;
+
+}
+.article_title{
+    color: #FCFCFC;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+margin-bottom: 14px;
+}
+.line{
+    height: 2px;
+    background-color: #B3BFD7;
+    margin-bottom: 24px;
+}
+.article_txt{
+    color: #B3BFD7;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px; 
+margin-bottom: 27px;
+}
+/* main title */
+.main_title{
+grid-area: main_title;
+color: #000;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+width: 74%;
+}
+/* read more */
+.readmore{
+    grid-area: readmore;
+}
+
+.read_more_txt{
+    color: #484F5E;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px;
+margin-bottom: 35px;
+}
+.read_more_button{
+    background-color: #F15D51;
+    padding: 15px 53px;
+    border: none;
+    color: #FFF;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px
+}
+
+/* cards */
+.card1{
+    grid-area: card1;
+    display: flex;
+    gap: 10px;
+
+
+}
+.card_nubmer{
+    color: #CAC9CD;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+margin-bottom: 18px;
+}
+.cardbaldtxt{
+    color: #000;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+margin-bottom: 10px;
+}
+.card_txt{
+    color: #484F5E;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+}
+.card2{
+    grid-area: card2;
+    display: flex;
+    gap: 10px;
+}
+.card3{
+    grid-area: card3;
+    display: flex;
+    gap: 10px;
+}
